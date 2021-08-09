@@ -12,31 +12,27 @@
 </head>
 
 <body>
-    <header>
-
+    <header class="container">
+        <h1>Din shoppinglista</h1>
     </header>
 
     <main>
+
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <form id="user-form">
-                        <div class="d-flex flex-column">
-                            <input class="form-control" type="" name="item-content" placeholder="Din vara här">
-                        </div>
-                        <div=class="d-flex flex-column">
-                            <button class="btn btn-dark" type="">Lägg till</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <ul class="list-group flex-column-reverse" id="shopping-list-content">
-                        </ul>
+                <form id="user-form">
+                    <div class="row">
+                        <div class="col"><input class="form-control" type="" name="item-content"
+                                placeholder="Din vara här"><span id="user-error"></span></div>
+                        <div class="col"><button class="btn btn-dark" type="">Lägg till</button></div>
                     </div>
+                </form>
+                <div class="col-md-6">
+                    <ul class="list-group flex-column-reverse" id="shopping-list-content">
+                    </ul>
                 </div>
-            </div>
-        </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
     </main>
 
     <footer>
